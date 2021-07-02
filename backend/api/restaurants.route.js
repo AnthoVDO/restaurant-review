@@ -1,5 +1,6 @@
 import express from "express";
 import RestaurantsController from "./restaurants.controller.js"
+import RestaurantsReview from "./reviews.controller.js"
 
 const router = express.Router(); //because this is a route file. it will redirect people.
 
@@ -8,5 +9,12 @@ const router = express.Router(); //because this is a route file. it will redirec
 // })
 
 router.route("/").get(RestaurantsController.apiGetRestaurants);
+
+router
+    .route("/review")
+    .post(ReviewsController.apiPostReview)
+    .put(ReviewsController.apiUpdateReview)
+    .delete(ReviewsController.apiDeleteReview)
+
 
 export default router;
