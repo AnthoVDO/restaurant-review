@@ -1,6 +1,6 @@
 import express from "express";
 import RestaurantsController from "./restaurants.controller.js"
-import RestaurantsReview from "./reviews.controller.js"
+import ReviewsController from "./reviews.controller.js"
 
 const router = express.Router(); //because this is a route file. it will redirect people.
 
