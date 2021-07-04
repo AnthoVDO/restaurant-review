@@ -9,6 +9,8 @@ const router = express.Router(); //because this is a route file. it will redirec
 // })
 
 router.route("/").get(RestaurantsController.apiGetRestaurants);
+router.route("/id/:id").get(RestaurantsController.apiGetRestaurantById);
+router.route("/cuisines").get(RestaurantsController.apiGetRestaurantCuisines);
 
 router
     .route("/review")
