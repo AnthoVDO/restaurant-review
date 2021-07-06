@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AddReview from "./components/add-review";
 import Login from "./components/login";
 import RestaurantsList from "./components/restaurants-list";
-import Restaurants from "./components/restaurants";
+import Restaurant from "./components/restaurants";
 
 
 function App() {
@@ -55,7 +55,7 @@ function App() {
           <Route
           path="/restaurants/:id" 
             render={(props)=>{
-              return <Restaurants {...props} user={user}/>
+              return <Restaurant {...props} user={user}/>
             }}
           />
           <Route 

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Restaurants = () => {
+const Restaurant = () => {
     return (
         <div>
-            
+           hello world
         </div>
     );
 };
 
-export default Restaurants;
+export default Restaurant;
