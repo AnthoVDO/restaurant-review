@@ -22,6 +22,9 @@ class RestaurantDataServices {
     }
 
     deleteReview(id, userId){
+        console.log("id: "+id);
+        console.log("user_id :"+userId);
+        console.log(`/review?id=${id}`, {data:{user_id: userId}})
         return http.delete(`/review?id=${id}`, {data:{user_id: userId}})
     }
 

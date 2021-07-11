@@ -7,7 +7,6 @@ import Login from "./components/login";
 import RestaurantsList from "./components/restaurants-list";
 import Restaurant from "./components/restaurants";
 
-
 function App() {
 
   const [user, setUser] = React.useState(null);
