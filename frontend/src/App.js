@@ -48,7 +48,7 @@ function App() {
           <Route
           path="/restaurants/:id/review"
           render={(props)=>{ //render allow us to use the props instead of component
-            <AddReview {...props} user={user} />
+            return <AddReview {...props} user={user} />
           }}
           />
           <Route
